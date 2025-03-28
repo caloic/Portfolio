@@ -620,6 +620,57 @@ header {
     max-width: 150px;
 }
 
+/* Animation Logo Section */
+.animation-section {
+    padding: 50px 15%;
+    background-color: #141414;
+    position: relative;
+}
+
+.animation-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.animation-container {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.animation-container:hover {
+    transform: translateY(-5px);
+}
+
+.animation-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .animation-section {
+        padding: 40px 5%;
+    }
+
+    .animation-container {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .animation-container {
+        max-width: 300px;
+    }
+}
+
 /* Contact Section */
 .contact-section {
     padding: 50px 15%;
