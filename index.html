@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïc Cano - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <a href="#accueil">
+            <img src="img/logo.png" alt="Logo Loïc Cano">
+        </a>
+    </div>
+    <nav class="nav-desktop">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="burger-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="nav-mobile">
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="accueil" class="hero-section">
+    <div class="hero-background">
+        <img src="img/background_dev.png" alt="Illustration de développement">
+    </div>
+    <div class="hero-content">
+        <div class="name-badge">
+            <span>Loïc Cano</span>
+        </div>
+        <div class="hero-text">
+            <h1>Conçoit l'invisible pour le rendre <span class="highlight">fonctionnel</span>...</h1>
+            <p>Parce que c'est dans l'invisible que tout commence</p>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <a href="#a-propos" class="scroll-down-btn">
+            <span class="scroll-text">Défiler</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</section>
+
+<!-- À propos Section -->
+<section id="a-propos" class="about-section">
+    <div class="section-title">
+        <h2><span class="hash">#</span>À propos</h2>
+    </div>
+    <div class="about-content">
+        <div class="about-card">
+            <div class="about-header">
+                <h3>Loïc Cano</h3>
+                <span class="status-badge">Disponible pour de l'alternance</span>
+            </div>
+            <div class="about-info">
+                <p><i class="fas fa-briefcase"></i> Développeur Web & Mobile</p>
+                <p><i class="fas fa-map-marker-alt"></i> Montpellier</p>
+            </div>
+            <div class="about-description">
+                <p>Je suis étudiant en deuxième année d'informatique à Ynov Campus Montpellier. Je conçois des sites web et des applications mobiles en m'inspirant des dernières tendances du design. Je m'efforce de créer des solutions numériques qui répondent aux besoins des utilisateurs tout en respectant les exigences des projets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Compétences Section -->
+<section id="competences" class="skills-section">
+    <div class="section-title">
+        <h2><span class="hash">#</span>Compétences</h2>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-item"><img src="img/skills/html.png" alt="HTML"></div>
+        <div class="skill-item"><img src="img/skills/css.png" alt="CSS"></div>
+        <div class="skill-item"><img src="img/skills/sql.png" alt="SQL"></div>
+        <div class="skill-item"><img src="img/skills/wordpress.png" alt="Wordpress"></div>
+        <div class="skill-item"><img src="img/skills/js.png" alt="JavaScript"></div>
+        <div class="skill-item"><img src="img/skills/java.png" alt="Java"></div>
+        <div class="skill-item"><img src="img/skills/python.png" alt="Python"></div>
+        <div class="skill-item"><img src="img/skills/figma.png" alt="Figma"></div>
+    </div>
+    <div class="laptop-image">
+        <img src="img/mac.png" alt="Mac">
+    </div>
+</section>
+
+<!-- Projets Section -->
+<section id="projets" class="projects-section">
+    <div class="section-title">
+        <h2><span class="hash">#</span>Projets</h2>
+    </div>
+
+    <!-- Filtres de projets -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="application">Application</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+
+    <div class="projects-container">
+        <!-- Projet mis en avant -->
+        <div class="featured-project" data-category="web">
+            <div class="featured-badge">Projet phare</div>
+            <div class="featured-content">
+                <div class="featured-info">
+                    <h3>Site E-commerce PokéShop</h3>
+                    <p>PokéShop est une application web de commerce électronique développée en PHP, offrant une expérience d'achat en ligne complète et intuitive.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JS</span>
+                        <span class="tech-badge">MAMP</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-btn"><i class="fab fa-github"></i> Github</a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="img/pokeshop.png" alt="Image Pokeshop">
+                </div>
+            </div>
+        </div>
+
+        <!-- Grille de projets réguliers -->
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <div class="project-card" data-category="application">
+                <div class="project-image">
+                    <img src="img/cinePIC.png" alt="Application CinéPic">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>CinéPic</h4>
+                            <div class="overlay-actions">
+                                <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <span class="project-badge">Application</span>
+                    <h3>CinéPic</h3>
+                    <p>Développée avec JavaFX, CinéPIC est une application de bureau permettant de rechercher des films, de les noter et de les ajouter à une watchlist.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">JavaFX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="img/cv.png" alt="Curriculum vitæ">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>Curriculum vitæ</h4>
+                            <div class="overlay-actions">
+                                <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <span class="project-badge">Design</span>
+                    <h3>Curriculum vitæ</h3>
+                    <p>Pas encore de descriptions.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton pour voir plus de projets -->
+            <div class="view-more">
+                <a href="https://github.com/caloic" class="view-more-btn">
+                    Voir plus sur GitHub <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="section-title">
+        <h2><span class="hash">#</span>Contact</h2>
+    </div>
+    <div class="contact-form">
+        <div class="form-group">
+            <label for="name">Votre nom & prénom</label>
+            <input type="text" id="name" placeholder="Nom / Prénom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div class="form-group full-width">
+            <label for="message">Votre message</label>
+            <textarea id="message" placeholder="Message" rows="6" required></textarea>
+        </div>
+        <div class="form-submit">
+            <button type="submit">Envoyer <i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-logo">
+        <img src="img/logo-white.png" alt="Logo Loïc Cano">
+        <p>Loïc Cano</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
